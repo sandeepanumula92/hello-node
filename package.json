@@ -5,9 +5,16 @@
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha test/*test.js"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "dns": "^0.2.2",
+    "express": "^4.16.1",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
