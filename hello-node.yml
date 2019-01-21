@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: hello
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: mycr001.azurecr.io/tshaiman/hello-node
+        image: acrforaksdemo.azurecr.io/tshaiman/hello-node
         resources:
           requests:
             cpu: 100m
