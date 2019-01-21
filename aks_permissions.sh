@@ -3,7 +3,7 @@
 AKS_RESOURCE_GROUP=myAKSCluster
 AKS_CLUSTER_NAME=myAKSCluster
 ACR_RESOURCE_GROUP=myACRGroup
-ACR_NAME=myCR001
+ACR_NAME=acrforaksdemo
 
 # Get the id of the service principal configured for AKS
 CLIENT_ID=$(az aks show --resource-group $AKS_RESOURCE_GROUP --name $AKS_CLUSTER_NAME --query "servicePrincipalProfile.clientId" --output tsv)
